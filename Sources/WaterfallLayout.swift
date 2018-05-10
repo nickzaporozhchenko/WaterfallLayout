@@ -153,7 +153,7 @@ public class WaterfallLayout: UICollectionViewLayout {
     }
 
     override public func shouldInvalidateLayout(forPreferredLayoutAttributes preferredAttributes: UICollectionViewLayoutAttributes, withOriginalAttributes originalAttributes: UICollectionViewLayoutAttributes) -> Bool {
-        return cachedItemSizes[originalAttributes.indexPath] != preferredAttributes.size
+        return true //cachedItemSizes[originalAttributes.indexPath] != preferredAttributes.size
     }
 
     override public func invalidationContext(forPreferredLayoutAttributes preferredAttributes: UICollectionViewLayoutAttributes, withOriginalAttributes originalAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutInvalidationContext {
